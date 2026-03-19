@@ -1,0 +1,15 @@
+info:
+  name: Search Nearby Addresses - 50km NYC
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://localhost:8000/addresses/nearby/search?latitude=40.7128&longitude=-74.0060&distance_km=50
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

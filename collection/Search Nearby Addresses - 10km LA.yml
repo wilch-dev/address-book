@@ -1,0 +1,15 @@
+info:
+  name: Search Nearby Addresses - 10km LA
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: http://localhost:8000/addresses/nearby/search?latitude=34.0522&longitude=-118.2437&distance_km=10
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

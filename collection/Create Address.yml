@@ -1,0 +1,26 @@
+info:
+  name: Create Address
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8000/addresses
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+                  "address": "123 Main St, New York, NY 10001, USA",
+                  "latitude": 40.7128,
+                  "longitude": -74.0060
+              }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

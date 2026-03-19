@@ -1,0 +1,22 @@
+info:
+  name: Update Address
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost:8000/addresses/1
+  auth: inherit
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    mode: json
+    json:
+      address: "456 Updated St, New York, NY 10002, USA"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
