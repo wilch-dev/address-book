@@ -6,14 +6,18 @@ info:
 http:
   method: PUT
   url: http://localhost:8000/addresses/1
-  auth: inherit
   headers:
     - name: Content-Type
       value: application/json
   body:
-    mode: json
-    json:
-      address: "456 Updated St, New York, NY 10002, USA"
+    type: json
+    data: |-
+      {
+                  "address": "124 Main St, New York, NY 10001, USA",
+                  "latitude": 89.7128,
+                  "longitude": -74.0060
+              }
+  auth: inherit
 
 settings:
   encodeUrl: true

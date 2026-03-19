@@ -13,8 +13,8 @@ http:
     type: json
     data: |-
       {
-                  "address": "123 Main St, New York, NY 10001, USA",
-                  "latitude": 40.7128,
+                  "address": "125 Main St, New York, NY 10001, USA",
+                  "latitude": 54.7128,
                   "longitude": -74.0060
               }
   auth: inherit

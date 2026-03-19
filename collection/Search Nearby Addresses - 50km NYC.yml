@@ -5,7 +5,17 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8000/addresses/nearby/search?latitude=40.7128&longitude=-74.0060&distance_km=50
+  url: http://localhost:8000/addresses/nearby/search?latitude=89.7128&longitude=-74.0060&distance_km=50
+  params:
+    - name: latitude
+      value: "89.7128"
+      type: query
+    - name: longitude
+      value: "-74.0060"
+      type: query
+    - name: distance_km
+      value: "50"
+      type: query
   auth: inherit
 
 settings:

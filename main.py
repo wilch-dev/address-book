@@ -153,11 +153,7 @@ def get_nearby_addresses(
         if distance <= distance_km:
             nearby_addresses.append({
                 "id": address.id,
-                "street": address.street,
-                "city": address.city,
-                "state": address.state,
-                "postal_code": address.postal_code,
-                "country": address.country,
+                "address": address.address,
                 "latitude": address.latitude,
                 "longitude": address.longitude,
                 "distance": round(distance, 2)
